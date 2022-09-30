@@ -23,17 +23,9 @@ root.render(
             <SideBar />
             <Routes>
                 <Route path="/" element={<App />} />
-                <Route path="/index.html" element={<App />} />
                 <Route path="boards" element={<Boards />} />
                 <Route path="boards/id/:id" element={<BoardDetail />} />
-                <Route
-                    path="*"
-                    element={
-                        <main style={{ padding: "1rem" }}>
-                            <p>There's nothing here!</p>
-                        </main>
-                    }
-                />
+                <Route path="*" element={<App />}/>
             </Routes>
         </BoardProvider>
     </BrowserRouter>
