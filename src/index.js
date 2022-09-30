@@ -23,6 +23,7 @@ root.render(
             <SideBar />
             <Routes>
                 <Route path="/" element={<App />} />
+                <Route path="/index.html" element={<App />} />
                 <Route path="boards" element={<Boards />} />
                 <Route path="boards/id/:id" element={<BoardDetail />} />
                 <Route
