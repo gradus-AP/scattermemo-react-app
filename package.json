@@ -6,14 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx webpack --mode development",
-    "serve": "npx webpack serve"
+    "serve": "npx webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "postbuild": "cp build/index.html build/404.html"
   },
+  "homepage": "https://gradus-AP.github.io/scattermemo-react-app/",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.2.1",
     "faker": "^6.6.6",
+    "gh-pages": "^4.0.0",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
