@@ -1,0 +1,12 @@
+.componentApp {
+    /* background-color: blue; */
+}
+
+.title {
+    margin-bottom: 20px;   
+}
+
+.boardList {
+    display: flex;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header>
+            <nav class="header-contents">
+                <div class="header-item title">
+                    <a href="/">
+                        <%= htmlWebpackPlugin.options.title %>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <div class="main-wrapper">
+            <article class="main">
+                <div id="root"></div>
+                <script src="./bundle.js"></script>
+            </article>
+        </div>
+        <!-- footer -->
+        <footer>
+            <p>© All rights reserved by <%= htmlWebpackPlugin.options.organization %>.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

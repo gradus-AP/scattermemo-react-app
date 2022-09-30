@@ -1,0 +1,4 @@
+/* bootstrapのCSS変数を上書きできる */
+:root {
+    --bs-body-font-weight: 250;
+}

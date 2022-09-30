@@ -1,0 +1,17 @@
+.listItem {
+    white-space: nowrap;
+    height: 60px;
+    line-height: 60px;
+    color: dimgrey;
+}
+
+.link {
+    display: block;
+    margin: 1rem 0;
+    text-decoration: none;
+    color: dimgrey;
+}
+
+.link:hover {
+    color: #0d6efd;
+}

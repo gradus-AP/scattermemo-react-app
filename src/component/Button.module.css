@@ -1,0 +1,16 @@
+.btn {
+    background-color: #1c53e0;
+    color: #ffffff;
+    font-size: 0.9em;
+    font-weight: 250;
+    position: relative;
+    outline: none;
+    border: none;
+    /* border-radius: 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+}

@@ -1,0 +1,23 @@
+.sideBar {
+    position: absolute;
+    left: 0;
+    top: 60px; /* headerの高さと合わせる */
+    height: calc(100% - 60px); /*.topの高さを引く */
+    width: 160px;
+    background-color: whitesmoke;
+    z-index: 0;
+}
+
+.sideBar > ul {
+    position:fixed;
+    top: 60px;
+}
+
+.listItem {
+    margin-top: 16px;
+}
+
+.listItem > a {
+    color: dimgray;
+    text-decoration: none;
+}

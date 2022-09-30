@@ -1,0 +1,153 @@
+:root {
+    --main-color: white;
+    --text-color-dark: dimgray;
+    ---body-font-weight: 250;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: var(---body-font-weight);
+    font-family: inter-var, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    color: var(--text-color-dark);
+    background-color: var(--main-color);
+}
+
+/* header */
+header {
+    position: sticky;
+    top: 0;
+    vertical-align: middle;
+    border: none;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+}
+
+.header-contents {
+    height: 60px;
+    min-width: 1240px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.header-item {
+    float: left;
+    padding: 2px 10px;
+    margin-top: 14px;
+    /*bootstrap適用時*/
+}
+
+.header-item.title {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    margin-right: 400px;
+}
+
+.header-item.title > a {
+    text-decoration:none;
+    color: dimgray;
+}
+
+.search-box {
+    box-sizing: border-box;
+    position: relative;
+    border: 0.6px solid #999;
+    display: block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    height: 2.2em;
+    width: 140px;
+    overflow: hidden;
+}
+
+.search-box input[type="text"] {
+    border: none;
+    height: 2.2em;
+}
+
+.search-box input[type="text"]:focus {
+    outline: 0;
+}
+
+.search-box>button {
+    cursor: pointer;
+    font-family: FontAwesome;
+    border: none;
+    background: #1c53e0;
+    color: #fff;
+    position: absolute;
+    width: 3.5em;
+    height: 2.8em;
+    right: 0px;
+    top: -3px;
+    outline: none;
+}
+
+
+header>p {
+    margin: 9px;
+}
+
+.nav-row {
+    margin-right: 30px;
+    display: flex;
+}
+
+.nav-row>li {
+    font-size: 1rem;
+    list-style: none;
+    margin-left: 40px;
+}
+
+/* wrapper */
+.wrapper {
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+/* main */
+.main-wrapper {
+    width: 720px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.main {
+    padding-top: 50px;
+}
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    padding-top: 10px;
+    color: #fff;
+    background-color: steelblue;
+}
+
+footer>p {
+    vertical-align: middle;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #eee;
+    margin: 3em auto;
+}
+
+.link {
+    text-decoration: none;
+}
